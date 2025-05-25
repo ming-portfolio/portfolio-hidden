@@ -2,105 +2,169 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>My Portfolio</title>
 		<link rel="icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+		<meta name="robots" content="noindex,nofollow">
 	</head>
 
     <body>
-		
-		<!--ヘッダーここから-->
-		<header class="content-wrapper_sp content-wrapper">
-			<h1>My Portfolio</h1>
-		</header>
-		<!--ヘッダーここまで-->
-	
-		<!--Worksここから-->
-		<section class="content-wrapper">
-			<h2 class="title-main">Works</h2>
-			<p class="title-sub">制作したもの</p>
-			
-			<!--Newここから-->
-			<div class="work-group-top">
-				
-				<div class="work-new_about">
-					
-					<div class="work-new_box">
-						<a href="https://ming-portfolio.github.io/shiro.github.io/" class="work-new_link">
-							<img src="img/Shiro.png" alt="Shiro画像" width="500px">
-						</a>
-						
-						<table class="work-new_table">
-							<tr>
-								<th>制作期間</th>
-								<td>1週間（コーディングのみ）</td>
-							</tr>
-							<tr>
-								<th>使用技術</th>
-								<td>HTML/CSS</td>
-							</tr>
-							<tr>
-								<th>対応機種</th>
-								<td>SP/PC</td>
-							</tr>
-						</table>
+        <header class="l-header">
+                <h1 class="l-header-img">
+					<picture>
+						<source media="(max-width: 499px)" srcset="img/header_sp.jpg" />
+						<source media="(min-width: 500px)" srcset="img/header.jpg" />
+						<img src="img/header.jpg" width='1366' height='685' alt='My Portfolio' decoding='async' />
+					</picture>
+                </h1>
+        </header>
 
-						<div class="work-new_text">
-							<p>デザイン制作者：akane (@omsss22)<br>
-							※下記のサイトのAdobe XDを元にコーディングをしています。</p>
-							<a href="https://note.com/tmy_schaf/n/n49a9b727c5b1">コーディング練習用のデザイン~お花屋さんのLP編~</a>
+        <main class="u-pt">
+			<section class="l-container-s">
+				<h2 class="c-title-level1">News</h2>
+
+				<div class="news u-mt40">
+
+					<div class="news-item">
+						<time datetime="2025-05-25" class="news-date">2025/5/25</time>
+						<p>一部修正を行いました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-25" class="news-date">2025/5/25</time>
+						<p>News項目を追加しました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-23" class="news-date">2025/5/23</time>
+						<p>一部修正を行いました</p>
+					</div>
+
+					<div class="news-item">
+						<time datetime="2025-05-23" class="news-date">2025/5/23</time>
+						<p>ポートフォリオ（山頂ジャーナルと武者への道）を追加しました</p>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="l-container  u-pt">
+				<h2 class="c-title-level1">Works<span class="c-title-level2">制作したもの</span></h2>
+
+				<section class="works-new u-pt c-works-border">
+					<h3 class="u-visually-hidden">新しい制作物</h3>
+
+					<article class="work-new-box u-mt40">
+						<a href="portfolio/武者への道/" class="work-new-link">
+							<img src="img/busya.jpg" width='1352' height='630' alt='武者への道' decoding='async' class="work-new-image"/>
+						</a>
+
+						<dl class="u-mt40 work-new-about">
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">10日（コーディングのみ）</dd>
+
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / VScode / Figma</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">Hello Mentorの課題です。</dd>
+						</dl>
+					</article>
+
+					<article class="work-new-box u-mt40">
+						<a href="portfolio/山頂ジャーナル/" class="work-new-link">
+							<img src="img/summit-journal.jpg" width='1352' height='630' alt='Shiro' decoding='async' class="work-new-image"/>
+						</a>
+
+						<dl class="u-mt40 work-new-about">
+
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">2週間（コーディングのみ）</dd>
+
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / VScode / Figma</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">Hello Mentorの課題です。</dd>
+						</dl>
+
+					</article>
+
+					<article class="work-new-box u-mt40">
+						<a href="#" class="work-new-link">
+							<img src="img/header.jpg" width="2160" height='1300' alt='My Portfolio' decoding='async' class="work-new-image" />
+						</a>
+
+						<dl class="u-mt40 work-new-about">
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">未定（今後も追加や更新予定のため）</dd>
+
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / Adobe XD / Photoshop / Illustrator</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">自分らしさをコンセプトに私が好きな青空や海をイメージした清楚感のある色を選びました。</dd>
+						</dl>
+					</article>
+
+					<article class="work-new-box u-mt40">
+						<a href="portfolio/Shiro/" class="work-new-link">
+							<img src="img/Shiro.jpg" width='1352' height='630' alt='Shiro' decoding='async' class="work-new-image"/>
+						</a>
+
+						<dl class="u-mt40 work-new-about">
+							<dt class="work-new-about-term">制作期間</dt>
+							<dd class="work-new-about-desc">1週間（コーディングのみ）</dd>
+
+							<dt class="work-new-about-term">使用技術</dt>
+							<dd class="work-new-about-desc">HTML / CSS / Dreamweaver / Adobe XD</dd>
+
+							<dt class="work-new-about-term">対応機種</dt>
+							<dd class="work-new-about-desc">PC / SP</dd>
+
+							<dt class="work-new-about-term">デザイン制作者</dt>
+							<dd class="work-new-about-desc">akane (@omsss22)</dd>
+
+							<dt class="work-new-about-term">コメント</dt>
+							<dd class="work-new-about-desc">
+								下記のサイトのAdobe XDを元にコーディングをしています。<br>
+								<a href="https://note.com/tmy_schaf/n/n49a9b727c5b1" class="work-new-text-link">コーディング練習用のデザイン~お花屋さんのLP編~</a>
+							</dd>
+
+						</dl>
+					</article>
+
+				</section>
+
+				<section class="u-mt40">
+					<div class="c-works-border">
+						<h3 class="u-visually-hidden">大学時代の制作物</h3>
+						<div class="work-past-box u-mt40">
+							<img src="img/wedding.jpg" width='1788' height='942' alt='ウエディングサイト' decoding='async' class="work-past-image"/>
+							<img src='img/yamada-hospital.jpg' width='1788' height='898' alt='小児科サイト' decoding='async' class="work-past-image" />
+							<img src='img/smilecafe.jpg' width='1788' height='1043' alt='カフェサイト' decoding='async' class="work-past-image" />
+						</div>
+
+						<div class="work-past-button">
+							<a href="portfolio_hidden.pdf">VIEW MORE</a>
 						</div>
 					</div>
-					
-					<div class="work-new_box">
-						<a href="#" class="work-new_link">
-							<img src="img/portfolio.jpg" alt="ポートフォリオヘッダー画像" width="500px">
-						</a>
-						
-						<table class="work-new_table">
-							<tr>
-								<th>制作期間</th>
-								<td>未定（今後も追加や更新予定のため）</td>
-							</tr>
-							<tr>
-								<th>使用技術</th>
-								<td>HTML/CSS/Adobe XD/Photoshop/Illustrator</td>
-							</tr>
-							<tr>
-								<th>対応機種</th>
-								<td>SP/PC</td>
-							</tr>
-						</table>
+				</section>
+			</section>
 
-						<div class="work-new_text">
-							<p>・自分らしさをコンセプトに私が好きな青空や海をイメージした清楚感のある色を選びました。<br>・Adobe XDでのデザインカンプにはじめて挑戦をしました。今後はFigmaからのカンプ作成やコーディングに挑戦予定です。
-							</p>
-						</div>
-						
-					</div>
-					
-				</div>			
-				
-			</div>
-			<!--Newここまで-->
-			
-			<!--大学時代の制作物ここから-->
-			<div class="work-group-bottom">
-					<div class="work-past_image">
-						<img src="img/wedding.jpg" alt="Shiro画像" width="500px">
-						<img src="img/yamada-hospital.jpg" alt="Shiro画像" width="500px">
-						<img src="img/smilecafe_.jpg" alt="Shiro画像" width="500px">
-					</div>
-				
-					<div class="work-past_button">
-						<a href="portfolio_hidden.pdf">VIEW MORE</a>
-					</div>
-			</div>
-			<!--大学時代の制作物ここまで-->
-			
-		</section>
-		<!--Worksここまで->
+		</main>
 
-	</body>
+    </body>
 </html>

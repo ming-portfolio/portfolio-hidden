@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>山頂ジャーナル</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--headerここから-->
+    <header>
+      <div class="container header-sp-wrapper">
+        <a href="index.html"><img src='img/logo 2.png' width='240' height='59' alt='ロゴ' decoding='async' /></a>
+        <ul>
+          <li><a href="detail.html">登山記録</a></li>
+          <li><a href="gallery.html">ギャラリー</a></li>
+          <li><a href="information.html">運営者情報</a></li>
+          <li style="background: var(--background-color-nav);"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--headerここまで-->
+
+    <!--sectionここから-->
+    <section class="container section-wrapper">
+      <h1 class="main-title">お問い合わせ</h1>
+
+      <form action="#">
+        <div>
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="your-name" placeholder="山田 太郎" class="c-form-textarea">
+        </div>
+
+        <div>
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="your-message" placeholder="お問い合わせ内容をご記入ください。" class="c-form-textarea"></textarea>
+        </div>
+
+        <div class="contact-button">
+          <button type="submit" class="c-form-submit-button">送信する</button>
+        </div>
+    </form>
+    </section>
+    <!--sectionここまで-->
+
+    <!--footerここから-->
+    <footer>
+      <div class="container footer-wrapper">
+        <ul>
+          <li><a href="detail.html">登山記録</a></li>
+          <li><a href="gallery.html">ギャラリー</a></li>
+          <li><a href="information.html">運営者情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      <small>&copy; 2024 山頂ジャーナル</small>
+      </div>
+    </footer>
+    <!--footerここまで-->
+  </body>
+</html>
