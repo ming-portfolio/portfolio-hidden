@@ -367,17 +367,6 @@ layout > header
 }
 
 /*!
-layout > footer
-------------------------------
-*/
-.l-footer-text {
-  font-size: 12px;
-  text-align: center;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/*!
 page > News
 ------------------------------
 */
@@ -419,12 +408,28 @@ page > Works
 @media (min-width: 768px) {
   .works-new {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+}
+
+.work-new-box:nth-of-type(1) {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .work-new-box:nth-of-type(1) {
+    margin-top: 0px;
+  }
+
+  .work-new-box:nth-of-type(-n + 2) {
+    margin-top: 30px;
   }
 }
 
 .work-new-image {
   object-fit: cover;
   aspect-ratio: 800 / 400;
+  transition: 0.5s;
 }
 
 @media (any-hover: hover) {
