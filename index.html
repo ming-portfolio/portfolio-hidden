@@ -20,7 +20,7 @@
         <picture>
           <source media="(max-width: 499px)" srcset="img/header_sp.jpg" />
           <source media="(min-width: 500px)" srcset="img/header.jpg" />
-          <img src="img/header.jpg" width="1366" height="685" alt="My Portfolio" decoding="async" />
+          <img src="img/header.jpg" width="1366" height="685" alt="My Portfolio" decoding="sync" />
         </picture>
       </h1>
     </header>
@@ -30,6 +30,16 @@
         <h2 class="c-title-level1">News</h2>
 
         <div class="news u-mt">
+          <div class="news-item">
+            <time datetime="2025-06-15" class="news-date">2025/06/15</time>
+            <p>本サイトの一部修正を行いました</p>
+          </div>
+
+          <div class="news-item">
+            <time datetime="2025-06-15" class="news-date">2025/06/15</time>
+            <p>山頂ジャーナルのコメントを追加しました</p>
+          </div>
+
           <div class="news-item">
             <time datetime="2025-06-12" class="news-date">2025/06/12</time>
             <p>武者への道とカフェサイトのコメントを追加しました</p>
@@ -52,17 +62,7 @@
 
           <div class="news-item">
             <time datetime="2025-05-25" class="news-date">2025/05/25</time>
-            <p>一部修正を行いました</p>
-          </div>
-
-          <div class="news-item">
-            <time datetime="2025-05-25" class="news-date">2025/05/25</time>
             <p>News項目を追加しました</p>
-          </div>
-
-          <div class="news-item">
-            <time datetime="2025-05-23" class="news-date">2025/05/23</time>
-            <p>一部修正を行いました</p>
           </div>
 
           <div class="news-item">
@@ -81,8 +81,8 @@
         <section class="works-new u-pt c-works-border">
           <h3 class="u-visually-hidden">新しい制作物</h3>
 
-          <article class="work-new-box u-mt">
-            <a href="portfolio/カフェ/" class="work-new-link">
+          <article class="work-new-box">
+            <a href="portfolio/カフェ/" class="work-new-link" target="_blank">
               <img
                 src="img/supple-cafe.jpg"
                 width="1352"
@@ -112,8 +112,8 @@
             </dl>
           </article>
 
-          <article class="work-new-box u-mt">
-            <a href="portfolio/武者への道/" class="work-new-link">
+          <article class="work-new-box">
+            <a href="portfolio/武者への道/" class="work-new-link" target="_blank">
               <img
                 src="img/busya.jpg"
                 width="1352"
@@ -143,8 +143,8 @@
             </dl>
           </article>
 
-          <article class="work-new-box u-mt">
-            <a href="portfolio/山頂ジャーナル/" class="work-new-link">
+          <article class="work-new-box">
+            <a href="portfolio/山頂ジャーナル/" class="work-new-link" target="_blank">
               <img
                 src="img/summit-journal.jpg"
                 width="1352"
@@ -166,11 +166,15 @@
               <dd class="work-new-about-desc">PC / SP</dd>
 
               <dt class="work-new-about-term">コメント</dt>
-              <dd class="work-new-about-desc">Hello Mentorの課題です。</dd>
+              <dd class="work-new-about-desc">
+                Hello Mentorの課題です。
+                <br />
+                ピクセルパーフェクトを意識したコーディングを行いました。
+              </dd>
             </dl>
           </article>
 
-          <article class="work-new-box u-mt">
+          <article class="work-new-box">
             <a href="#" class="work-new-link">
               <img
                 src="img/header.jpg"
@@ -199,8 +203,8 @@
             </dl>
           </article>
 
-          <article class="work-new-box u-mt">
-            <a href="portfolio/Shiro/" class="work-new-link">
+          <article class="work-new-box">
+            <a href="portfolio/Shiro/" class="work-new-link" target="_blank">
               <img
                 src="img/Shiro.jpg"
                 width="1352"
@@ -228,7 +232,10 @@
               <dd class="work-new-about-desc">
                 下記のサイトのAdobe XDを元にコーディングをしています。
                 <br />
-                <a href="https://note.com/tmy_schaf/n/n49a9b727c5b1" class="work-new-text-link"
+                <a
+                  href="https://note.com/tmy_schaf/n/n49a9b727c5b1"
+                  class="work-new-text-link"
+                  target="_blank"
                   >コーディング練習用のデザイン~お花屋さんのLP編~</a
                 >
               </dd>
@@ -267,7 +274,7 @@
             </div>
 
             <div class="work-past-button">
-              <a href="portfolio_hidden.pdf">VIEW MORE</a>
+              <a href="portfolio_hidden.pdf" target="_blank">VIEW MORE</a>
             </div>
           </div>
         </section>
